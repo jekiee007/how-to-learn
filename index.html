@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -14,18 +14,18 @@
 
     <!--1. Шапка сайта-->
     <header class="header">
-      <div class="logo logo_place_header layer__top"></div>
-      <h1 class="header__title layer__top">
+      <div class="logo logo_place_header"></div>
+      <h1 class="header__title">
         Научиться учиться
       </h1>
-      <h2 class="header__subtitle layer__top">
+      <p class="header__subtitle">
         Какие современные и эффективные подходы
         к обучению вы можете использовать в своей жизни?
-        <a class="link" href="#">Узнать →</a>
-      </h2>
-      <img src="./images/header-image.png" class="header__main-illustration layer__middle"
+        <a class="header__link" href="#">Узнать →</a>
+      </p>
+      <img src="./images/header-image.png" class="header__main-illustration"
         alt="Упс, потеряли картинку :(">
-      <div class="header__square-pic layer__bottom"></div>
+      <div class="header__square-pic"></div>
 
     </header>
 
@@ -34,20 +34,20 @@
       <!--2. Блок description (описание)-->
       <section class="description">
         <div class="two-columns">
-          <h3 class="two-columns__brief"> Главные проблемы в обучении</h3>
-          <div class="main-text">
-            <p class="paragraph">
+          <h2 class="two-columns__brief"> Главные проблемы в обучении</h2>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">
               Ни в школе, ни в институте нас не учат тому,
               как правильно изучать материал. Мы готовимся к экзаменам и учим
               билеты. Мы тренируемся решать однообразные задачи, чтобы лучше
               сдать тест, но часто в итоге это не дает нам реального знания.
               Зубрежка быстро выветривается и не приносит пользы.
             </p>
-            <p class="paragraph">
-              <span class="span-accent">Вывод: </span>учиться тоже нужно уметь,
+            <p class="two-columns__paragraph">
+              <span class="two-columns__span-accent">Вывод: </span>учиться тоже нужно уметь,
               но почему-то этому мало где учат. Что с этим делать?
             </p>
-            <p class="paragraph">
+            <p class="two-columns__paragraph">
               Конкретные техники и упражнения помогают
               изменить подход к обучению, сделать его эффективным и захватывающим.
               Эти же техники применяются на примере обучения в Практикуме.
@@ -58,8 +58,8 @@
 
       <!--3. Блок digits (цифры и факты)-->
       <section class="digits">
-        <h1 class="section-title">Цифры и факты</h1>
-        <h2 class="section-subtitle">Про учёбу и мозг</h2>
+        <h2 class="section-title">Цифры и факты</h2>
+        <p class="section-subtitle">Про учёбу и мозг</p>
         <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">
@@ -136,105 +136,104 @@
 
       <!--4. Блок Фейнман (Метод Фейнмана)-->
       <section class="feynman">
-        <h1 class="feynman__title layer__top">
+        <h2 class="feynman__title layer__top">
           Метод Фейнмана
-        </h1>
-        <h2 class="feynman__subtitle layer__top">
-          Выучить и не забыть.
         </h2>
-        <a class="feynman__link layer__top" href="#">Подробнее →
+        <p class="feynman__subtitle layer__top">
+          Выучить и не забыть.
+        </p>
+        <a class="feynman__link" href="#">Подробнее →
         </a>
-        <img src="./images/feynman.png" class="feynman__background-img layer__middle" alt="Упс, потеряли картинку :(">
+        <img src="./images/feynman.png" class="feynman__background-img" alt="Упс, потеряли картинку :(">
       </section>
 
       <!--5. Блок Кауфман (Принципы обучения от Джоша Кауфмана)-->
       <section class="kaufman">
-        <img class="kaufman__triangle_img layout__middle" src="./images/kaufman-triangle.svg"
+        <img class="kaufman__triangle_img" src="./images/kaufman-triangle.svg"
           alt="Упс, потеряли картинку :(" />
-        <h1 class="section-title section-title_theme_dark">
+        <h2 class="section-title section-title_theme_dark">
           Принципы обучения
-        </h1>
-        <h2 class="section-subtitle section-subtitle_theme_dark">
-          от Джоша Кауфмана
         </h2>
-        <div class="table table__theme_dark layer__top">
+        <p class="section-subtitle section-subtitle_theme_dark">
+          от Джоша Кауфмана
+        </p>
+        <div class="table table__theme_dark">
           <div class="table__cell table__cell_theme_dark ">
-            <h4 class="table__heading table__heading_theme_dark ">
+            <h3 class="table__heading table__heading_theme_dark ">
               1
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Выберите привлекательный проект.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               2
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Сосредоточьтесь на каком-то одном навыке.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               3
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Определите целевой уровень мастерства.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               4
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Разбейте навык на элементы.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               5
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Приготовьте всё необходимое для занятий.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               6
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Устраните препятствия для занятий.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               7
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Выделите специальное время для занятий.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               8
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Создайте быстрые петли обратной связи.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               9
-            </h4>
-
+            </h3>
             <p class="table__text table__text_theme_dark">
               Занимайтесь по расписанию, короткими интенсивными интервалами.
             </p>
           </div>
           <div class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">
+            <h3 class="table__heading table__heading_theme_dark">
               10
-            </h4>
+            </h3>
             <p class="table__text table__text_theme_dark">
               Уделяйте внимание количеству и скорости.
             </p>
@@ -247,15 +246,15 @@
     <!--6. Подвал-->
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer__column_content_copyright">
+        <div class="footer footer__columns footer__column_content_copyrigh">
           <div class="logo logo_place_footer"></div>
-          <div class="footer__author">&copy; Евгений Гук</div>
+          <p class="footer__author">&copy; Евгений Гук</p>
         </div>
         <div class="footer__column_content_info">
-          <p class="footer__column-heading">
+          <h2 class="footer__column-heading">
             О Практикуме
-          </p>
-          <div class="footer__column_links">
+          </h2>
+          <div class="footer__column-links">
             <a href="#" class="footer__column-link">
               Главная
             </a>
@@ -271,7 +270,7 @@
           <div class="footer__column-heading">
             Соцсети
           </div>
-          <div class="footer__column_links">
+          <div class="footer__column-links">
             <a href="#" class="footer__column-link">
               <img src="./images/facebook_color_white.svg" class="footer__social_icon" alt="Facebook потеряли :(">
               Facebook
