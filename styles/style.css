@@ -1,5 +1,5 @@
 /* Класс-чинилка :) */
-div,
+/* div,
 h1,
 h2,
 h3,
@@ -9,7 +9,7 @@ h6,
 p,
 footer {
   border: 1px solid red;
-}
+} */
 
 .page {
   min-width: 1100px;
@@ -289,7 +289,7 @@ ul {
   z-index: 1;
 }
 
-.table__theme_dark {
+.table_theme_dark {
   margin: 0 auto 90px;
   color: white;
   z-index: 1;
@@ -311,17 +311,16 @@ ul {
   color: white;
 }
 
-.kaufman__triangle_img {
+.kaufman__triangle {
   position: absolute;
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
-  /* background-size: contain; */
-  
-  background-size: cover;
+  background-size: contain;
   z-index: 0;
   height: 877px;
   width: 877px;
   right: -210px;
+  top: 0;
 }
 
 /*== 5. Конец блока Кауфмана (Принципы обучения от Джоша Кауфмана) ==*/
