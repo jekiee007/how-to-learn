@@ -1,5 +1,5 @@
 /* Класс-чинилка :) */
-div,
+/* div,
 h1,
 h2,
 h3,
@@ -9,7 +9,7 @@ h6,
 p,
 footer {
   border: 1px solid red;
-}
+} */
 
 .page {
   min-width: 1100px;
@@ -325,37 +325,38 @@ ul {
 /*== 6. Подвал (footer) ==*/
 .footer {
   display: flex;
-  position: relative;
   background-color: #1f1f1f;
   min-height: 350px;
+  justify-content: space-between;
+  padding: 60px 0 40px 0;
 }
 
 .footer__columns {
   display: flex;
-  align-items: stretch;
   justify-content: space-between;
   flex-direction: row;
-  position: relative;
-  margin: 60px auto 40px;
+  margin: 0 auto;
   width: 90%;
 }
 
 .footer__column_content_copyright {
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  margin: 0;
   flex-basis: 711px;
 }
 
 .footer__column_content_info {
-  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0;
 }
 
 .footer__column_content_social {
-  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  margin: 0;
 }
 
 .logo_place_footer {
@@ -365,12 +366,15 @@ ul {
 }
 
 .footer__author {
+  position: relative;
   color: white;
   height: 25px;
   font-size: 18px;
   font-weight: normal;
   padding-bottom: 18px;
   padding-top: 18px;
+  margin: 0;
+  width: fit-content;
 }
 
 .footer__column-heading {
