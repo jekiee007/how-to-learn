@@ -1,5 +1,5 @@
 /* Класс-чинилка :) */
-/* div,
+div,
 h1,
 h2,
 h3,
@@ -9,7 +9,7 @@ h6,
 p,
 footer {
   border: 1px solid red;
-} */
+}
 
 .page {
   min-width: 1100px;
@@ -23,7 +23,7 @@ footer {
 }
 
 /*==Общие для сайта классы==*/
-
+/* не успел исправить списки :( */
 .li {
   list-style-type: none; /* Убираем маркеры */
 }
@@ -313,6 +313,10 @@ ul {
 
 .kaufman__triangle_img {
   position: absolute;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  
   background-size: cover;
   z-index: 0;
   height: 877px;
@@ -366,7 +370,6 @@ ul {
 }
 
 .footer__author {
-  position: relative;
   color: white;
   height: 25px;
   font-size: 18px;
