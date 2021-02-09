@@ -1,5 +1,5 @@
 /* Класс-чинилка :) */
-/* div,
+div,
 h1,
 h2,
 h3,
@@ -11,7 +11,7 @@ a,
 nav,
 footer {
   border: 1px solid red;
-} */
+}
 
 .page {
   min-width: 1100px;
@@ -153,9 +153,100 @@ footer {
 }
 /*== 2. конец блока description (описание)==*/
 
+/*== Блок techniques (Техники обучения) ==*/
+.techniques{
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 920px;
+}
+
+.cards__item{
+  margin-top: 60px;
+  margin-right: 100px;
+  width: 240px;
+  border: none;
+}
+
+.cards__item:nth-child(3n){
+  margin-top: 60px;
+  margin-right: 0;
+  width: 240px;
+}
+
+.cards__image{
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+  margin: 0 40px 0;
+}
+
+.cards__title{
+margin-top: 43px;
+line-height: 1.15;
+font-size: 24px;
+font-weight: bolder;
+text-align: center;
+}
+
+.cards__descritpion{
+margin: 16px auto 0;
+line-height: 23px;
+font-size: 18px;
+font-weight: normal;
+text-align: center;
+}
+/*== Конец блока techniques (Техники обучения) ==*/
+
+
+/*== Блок video (Видео на TED) ==*/
+.video{
+  margin: 100px auto 0;
+}
+
+.video__iframes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px auto 0;
+  width: 1050px;
+}
+
+.video__iframe{
+ width: 515px;
+ height: 316px;
+}
+/*== Конец блока video (Видео на TED) ==*/
+
+
+/*== Блок oakley (История Барбары Оакли) ==*/
+.oakley{
+  margin: 160px auto 0;
+  display: flex;
+  justify-content: center;
+}
+/*== Конец блока oakley (История Барбары Оакли) ==*/
+
+
+/*== Блок khan (Салман Хан) ==*/
+.khan{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+/*== Конец блока khan (Салман Хан) ==*/
+
+
 /*== 3. Блок digits (цифры и факты) ==*/
 .digits {
-  margin: 100px auto 100px;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -316,6 +407,9 @@ footer {
 }
 
 /*== 5. Конец блока Кауфмана (Принципы обучения от Джоша Кауфмана) ==*/
+
+/* Блок resources (Полезные ресурсы) */
+/* Конец блока resources (Полезные ресурсы) */
 
 /*== 6. Подвал (footer) ==*/
 .footer {
