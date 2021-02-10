@@ -1,5 +1,27 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/techniques/techniques.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/oakley/oakley.css);
+@import url(../blocks/feynman/feynman.css);
+@import url(../blocks/digits/digits.css);
+@import url(../blocks/khan/khan.css);
+@import url(../blocks/resources/resources.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/kaufman/kaufman.css);
+@import url(../blocks/logo/logo.css);
+
 /* Класс-чинилка :) */
-div,
+/* div,
 h1,
 h2,
 h3,
@@ -11,7 +33,7 @@ a,
 nav,
 footer {
   border: 1px solid red;
-}
+} */
 
 .page {
   min-width: 1100px;
@@ -27,26 +49,8 @@ footer {
 /*==Общие для сайта классы==*/
 
 /*== 1. Шапка сайта ==*/
-.header {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  background-color: #f2f2f2;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
-}
 
 /* Класс .logo применяется два раза: в шапке сайта и в подвале*/
-.logo {
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 183px;
-}
 
 .logo_place_header {
   position: absolute;
@@ -56,7 +60,7 @@ footer {
   left: 64px;
 }
 
-.header__title {
+/* .header__title {
   font-size: 102px;
   z-index: 2;
   font-weight: bolder;
@@ -64,7 +68,7 @@ footer {
   width: 100%;
   line-height: 96px;
   margin: 0 0 0 64px;
-}
+} */
 
 .header__subtitle {
   position: absolute;
@@ -97,20 +101,23 @@ footer {
   top: 64px;
   right: 0;
   z-index: 0;
+  box-sizing: border-box;
+  animation: rotation 20s linear infinite;
 }
 
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.header__link:hover{
+  opacity: 0.5;
 }
 /*== 1. конец блока header (шапка сайта) ==*/
 
 /*== 2. Блок description (описание) ==*/
-.description {
-  display: flex;
-  justify-content: center;
-}
-
 .two-columns {
   display: flex;
   justify-content: space-between;
@@ -154,12 +161,9 @@ footer {
 /*== 2. конец блока description (описание)==*/
 
 /*== Блок techniques (Техники обучения) ==*/
-.techniques{
-  width: 80%;
-  margin: 100px auto 0;
-}
 
-.cards{
+
+.cards {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -168,87 +172,117 @@ footer {
   width: 920px;
 }
 
-.cards__item{
+.cards__item {
   margin-top: 60px;
   margin-right: 100px;
   width: 240px;
   border: none;
 }
 
-.cards__item:nth-child(3n){
+.cards__item:nth-child(3n) {
   margin-top: 60px;
   margin-right: 0;
   width: 240px;
 }
 
-.cards__image{
+.cards__image {
   border-radius: 50%;
   height: 160px;
   width: 160px;
   margin: 0 40px 0;
 }
 
-.cards__title{
-margin-top: 43px;
-line-height: 1.15;
-font-size: 24px;
-font-weight: bolder;
-text-align: center;
+.cards__title {
+  margin-top: 43px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
 }
 
-.cards__descritpion{
-margin: 16px auto 0;
-line-height: 23px;
-font-size: 18px;
-font-weight: normal;
-text-align: center;
+.cards__descritpion {
+  margin: 16px auto 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
 }
 /*== Конец блока techniques (Техники обучения) ==*/
 
-
 /*== Блок video (Видео на TED) ==*/
-.video{
-  margin: 100px auto 0;
-}
 
-.video__iframes{
+
+.video__iframes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 50px auto 0;
   width: 1050px;
+  border: none;
 }
 
-.video__iframe{
- width: 515px;
- height: 316px;
+.video__iframe {
+  width: 515px;
+  height: 316px;
 }
 /*== Конец блока video (Видео на TED) ==*/
 
-
 /*== Блок oakley (История Барбары Оакли) ==*/
-.oakley{
-  margin: 160px auto 0;
-  display: flex;
-  justify-content: center;
-}
+
 /*== Конец блока oakley (История Барбары Оакли) ==*/
 
+/*== 3. Конец блока digits (цифры и факты) ==*/
 
-/*== Блок khan (Салман Хан) ==*/
-.khan{
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+/*== 4. Блок Фейнман (Метод Фейнмана) ==*/
+
+
+.feynman__title {
+  margin: 0 auto 0;
+  width: 648px;
+  z-index: 1;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bolder;
 }
-/*== Конец блока khan (Салман Хан) ==*/
 
+.feynman__subtitle {
+  margin: 70px auto 0;
+  z-index: 1;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  color: #2f80ed;
+  font-style: normal;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.feynman__link:hover{
+  opacity: 0.5;
+}
+
+.feynman__background-img {
+  position: absolute;
+  background-size: cover;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  width: 867px;
+  height: 637px;
+}
+/*== 4. Конец блока Фейнман (Метод Фейнмана) ==*/
 
 /*== 3. Блок digits (цифры и факты) ==*/
-.digits {
-  margin: 100px auto;
-}
-
 .section-title {
   display: flex;
   justify-content: center;
@@ -298,67 +332,84 @@ text-align: center;
 }
 /*== конец карточки ==*/
 
-/*== 3. Конец блока digits (цифры и факты) ==*/
+/*== Блок khan (Салман Хан) ==*/
 
-/*== 4. Блок Фейнман (Метод Фейнмана) ==*/
-.feynman {
+
+.khan__container {
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  position: relative;
-  margin: auto;
-  background-color: #f2f2f2;
-  min-height: 790px;
+  width: 80%;
+  margin: 105px auto 0;
 }
 
-.feynman__title {
-  margin: 0 auto 0;
-  width: 648px;
-  z-index: 1;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: bolder;
-}
-
-.feynman__subtitle {
-  margin: 70px auto 0;
-  z-index: 1;
-  line-height: 51px;
-  font-size: 36px;
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
   font-weight: normal;
 }
 
-.feynman__link {
-  position: absolute;
-  top: 50%;
-  right: 48px;
-  line-height: 51px;
-  font-size: 36px;
-  color: #2f80ed;
-  font-style: normal;
-  text-decoration: none;
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bolder;
 }
 
-.feynman__background-img {
-  position: absolute;
-  background-size: cover;
-  z-index: 0;
-  left: 0;
-  bottom: 0;
-  width: 867px;
-  height: 637px;
+.khan__quote {
+  width: 790px;
+  margin: 50px 0 36px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
 }
-/*== 4. Конец блока Фейнман (Метод Фейнмана) ==*/
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.khan__quote-author-subline {
+  margin: 10px 0 68px 0;;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.khan__book-pic {
+  max-width: 620px;
+  max-height: 608px;
+  background-size: cover;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal ;
+  text-decoration: none;
+  color: #2f80ed;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.khan__buy-link:hover{
+  opacity: 0.5;
+}
+
+/*== Конец блока khan (Салман Хан) ==*/
 
 /*== 5. Блок Кауфман (Принципы обучения от Джоша Кауфмана) ==*/
-.kaufman {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  background-color: #1f1f1f;
-  overflow: hidden;
-}
+
 
 .section-title_theme_dark {
   margin-top: 90px;
@@ -404,23 +455,34 @@ text-align: center;
   width: 877px;
   right: -210px;
   top: 0;
+  animation: rotation 60s linear infinite;
 }
-
 /*== 5. Конец блока Кауфмана (Принципы обучения от Джоша Кауфмана) ==*/
 
 /* Блок resources (Полезные ресурсы) */
+.resources__logo-zone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 80px auto 0;
+}
+
+.resources__logo{
+width: 270px;
+height: 38px;
+border: 0;
+background-size: contain;
+opacity: 1;
+transition: opacity 0.3s ease;
+}
+
+.resources__logo:hover{
+opacity: 0.7;
+}
 /* Конец блока resources (Полезные ресурсы) */
 
 /*== 6. Подвал (footer) ==*/
-.footer {
-  display: flex;
-  background-color: #1f1f1f;
-  min-height: 350px;
-  justify-content: space-between;
-  box-sizing: border-box;
-  padding: 60px 0 40px 0;
-}
-
 .footer__columns {
   display: flex;
   justify-content: space-between;
@@ -429,7 +491,7 @@ text-align: center;
   width: 90%;
 }
 
-.footer__column{
+.footer__column {
   flex-direction: column;
 }
 
@@ -481,7 +543,7 @@ text-align: center;
   margin-right: 10px;
   width: 16px;
   height: 16px;
-}
+  }
 
 .footer__column-link {
   line-height: 30px;
@@ -489,6 +551,12 @@ text-align: center;
   font-weight: normal;
   color: white;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.footer__column-link:hover{
+  opacity: 0.3;
 }
 
 /*== 6. Конец блока подвал (footer) ==*/
