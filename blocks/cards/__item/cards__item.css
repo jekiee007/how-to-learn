@@ -1,0 +1,15 @@
+.cards__item {
+  margin-top: 60px;
+  margin-right: 100px;
+  width: 240px;
+  border: none;
+  list-style-type: none;
+}
+
+.cards__item:nth-child(3n) {
+  margin-top: 60px;
+  margin-right: 0;
+  width: 240px;
+  border: none;
+  list-style-type: none;
+}
